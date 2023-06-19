@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <link rel="" window.location.href="pedido.html">
+    <title> Pagina 1 </title>
+</head>
+<body style="font-family: 'Expo', sans-serif;">
+    <div style="margin: 24px;">
+        <nav class="navbar navbar-light" style="background-color: rgb(241, 180, 204);">
+            <div class="container">
+                <a class="navbar-brand"style="color: blue;" href="index (1).html">BIENVENIDOS</a>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href= "index2.html">Calculadora basica</a>
+                    </li>
+                    <li>
+                        <a href="pedido.html">Pedido</a>
+                    </li>
+                    <li>
+                        <a href="pedidorealizado.html">Cuestionario</a>
+                    </li>
+                    <li>
+                        <a href="contacto3.html">Calculadora de fisica</a>
+                    </li>
+                    <li>
+                        <a href="cuestionario.html">Cuestionario</a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">Cuestionario</a>
+                    </li>
+                    <li class="activate">
+                        <a href="movies.html">Movies</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <body>
+    <h1>PEDIDO REALIZADO</h1>
+    <h3>Con exito</h>
+        <ul>
+            <li><Strong>Nombre: </strong> <span id="nombre"></span></li>
+             <li><Strong>Apellidop: </strong> <span id="apellido"></span></li>
+             <li><Strong>Telefono: </strong> <span id="telefono"></span></li>
+             <li><Strong>Direccion: </strong> <span id="direccion"></span></li>
+            <li><Strong>Colonia: </strong> <span id="colonia"></span></li>
+            </ul>
+            <script>
+                 const orden=JSON.parse(localStorage.getItem("orden"));
+                 document.getElementById("nombre").textContent=orden.nombre,
+                 document.getElementById("apellido").textContent=orden.apellido,
+                 document.getElementById("telefono").textContent=orden.telefono,
+                 document.getElementById("direccion").textContent=orden.direccion,
+                 document.getElementById("colonia").textContent=orden.colonia,
+                 
+                 </script>
+</body>
+</html>
